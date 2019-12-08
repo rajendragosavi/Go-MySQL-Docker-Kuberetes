@@ -1,4 +1,6 @@
 FROM golang:latest as builder
+# Add Maintainer Info
+LABEL maintainer="Rajendra Gosavi <raje.g.995@gmail.com>"
 RUN mkdir /app
 WORKDIR /app
 COPY . .
